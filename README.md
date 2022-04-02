@@ -9,7 +9,7 @@ Izrađen je akcelerometar te je profiliran CPU.
     
 ![unknown](https://user-images.githubusercontent.com/84573071/161389247-012f897c-8790-477d-b981-e58501c4459d.png)    
     
-# Literatura
+## Literatura
 
 https://hackmd.io/@mateaturalija/HJxGpje6t
 https://hackmd.io/@mateaturalija/SylevVscF
