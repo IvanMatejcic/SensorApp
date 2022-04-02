@@ -1,8 +1,5 @@
 # SensorApp - Ivan Matejčić
 
-![unknown](https://user-images.githubusercontent.com/84573071/161389247-012f897c-8790-477d-b981-e58501c4459d.png)
-
-
 ## Kratak opis
 Izrađena je aplikacija koja koristi sensor akcelerometra te dohvaća real-time poziciju uređaja i njegove koordinate.
 Za testiranje korišten je fizički mobitel.
@@ -14,6 +11,8 @@ Izrađen je akcelerometar te je profiliran CPU.
 
 Kao što je na početku navedeno, provedeno je profiliranje CPU-a.
 Pokrenuta sesija je snimana (nekoliko sekundi) te iz povratno primljenog flow-charta se može zaključiti da je aplikacija poprilično dobro optimizirana, s time da je vrlo mala, nema mnogo koda niti značajki te zauzima jako malo prostora i memoriji. Također, uređaj koji je korišten za prikaz same aplikacije ima više nego dovoljne mogućnosti da pokrene takvu aplikaciju.
+    
+![unknown](https://user-images.githubusercontent.com/84573071/161389247-012f897c-8790-477d-b981-e58501c4459d.png)    
     
 # Literatura
 
