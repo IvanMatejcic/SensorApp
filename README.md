@@ -1,6 +1,7 @@
 # SensorApp - Ivan Matejčić
 
-![Aplikacija](/Desktop/unknown.png)
+![unknown](https://user-images.githubusercontent.com/84573071/161389247-012f897c-8790-477d-b981-e58501c4459d.png)
+
 
 ## Kratak opis
 Izrađena je aplikacija koja koristi sensor akcelerometra te dohvaća real-time poziciju uređaja i njegove koordinate.
