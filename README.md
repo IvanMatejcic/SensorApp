@@ -7,62 +7,6 @@ Koristi se vrlo jednostavno: pokrene se aplikacija te će, kako se uređaj kreć
 
 Izrađen je akcelerometar te je profiliran CPU.
 
-## Kod
-
-Kod aplikacije je jednostavan.  Od default tempalte-a nije mnogo promijenjeno.
-Za izgled same aplikacije, koristio sam slijedeći kod:
-
-```
-<GridLayout rows="40, 40, 40" columns="30,*,30">
-    <Label text="{{ x }}" row="0" col="1" backgroundColor="#CC0000"></Label>
-    <Label text="{{ y }}" row="1" col="1" backgroundColor="#CC0000"></Label>
-    <Label text="{{ z }}" row="2" col="1" backgroundColor="#CC0000"></Label>
-</GridLayout>
-```
-Postavio sam da je pozadinska boja crvena i da se ispišu sve 3 koordinate.
-
-Također, dodao sam kod kako bi se prikazao tekst svih triju koodrinata i njihove vrijednosti zaokružene na tri decimale.
-
-```
-viewModel.set('x', "X = " + data.x.toFixed(3))
-    viewModel.set('y', "Y = " + data.y.toFixed(3))
-    viewModel.set('z', "Z = " + data.z.toFixed(3))
-```
-
-## Problemi
-
-U ```home-view-model.js``` datoteci sam imao problem da mi se aplikacija nije htjela ispravno pokrenuti i to sam promijenio tako da sam zamijenio ime funkcije ```SensorViewModel()``` i ```HomeViewModel()```.
-
-```
-export function HomeViewModel() {
-  const viewModel = new Observable()
-```
-
-Nadalje, u prvom poku[aju sam poku[ao koristiti emulator. Svaki put kada bi ga poku[ao pokrenuti, dobio bih slijedeću pogrešku:
-
-![Error](/error.png)
-
-Ovaj problem sam riješio tako da sam u terminal unio slijedeću komandu:
-
-```
-$ sudo chown $USER:$USER $ANDROID_HOME -R
-```
-
-S ovom komandom postajem administrator i nakon toga sam mogao uspješno pokrenuti Android emulator.
-
-Tijekom izrade projekta, skakao sam između Linux-a i Windows-a.
-Dok nisam shvatio prijašnji problem na Linux-u, prebacio sam se na WIndows u nadi da će mi raditi sa manje problema.
-No, pojavio se problem kojeg nisam uspio shvatiti:
-
-![Error 2](/error2.png)
-
-Provjerio sam je li mi je slučajno bila ugašena virtualizacija u BIOS-u, no nije, tako da nisam znao kako preći ovaj problem, te sam nastavio na Linux-u.
-
-Naposlijetku, u Android Studio-u sam imao problem sa pokretanjem Profiler-a, nije mi se pojavljivao doduše.
-Taj problem sam riješio tako da sam u postavkama dodao Android facet.
-
-![Error 3](/Screenshot%20from%202022-03-31%2001-03-07.png)
-
 ## Profiliranje
 
 Kao što je na početku navedeno, provedeno je profiliranje CPU-a.
@@ -77,7 +21,6 @@ Screenshot aplikacije:
 
 ![Aplikacija](/unknown.png)
 
-Kod je dostupan na: https://github.com/IvanMatejcic/SensorApp
     
 # Literatura
 
